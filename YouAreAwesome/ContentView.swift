@@ -14,8 +14,8 @@ struct ContentView: View {
             Image(systemName: "convertible.side.fill").resizable()
                 .scaledToFit()
                 .foregroundStyle(.tint)
-            Text("You Are Awesome!")
-                .font(.largeTitle)
+            Text("Everything is Awesome!")
+                .font(.title)
                 .fontWeight(.bold)
                 .foregroundStyle(.green)
         }
