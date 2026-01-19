@@ -12,19 +12,32 @@ struct ContentView: View {
     var body: some View {
         
         VStack {
+            Spacer()
             Image(systemName: "convertible.side.fill").resizable()
                 .scaledToFit()
                 .foregroundStyle(.tint)
+                .frame(width: 200, height: 200)
             Text(message)
-                .font(.title)
-                .fontWeight(.bold)
-                .foregroundStyle(.green)
-            Button("Click Me!") {
+                .font(.largeTitle)
+                .fontWeight(.ultraLight)
+         
+        Spacer()
+        HStack {
+            Button("Awesome") {
                 message = "Awesome!"
             }
             .buttonStyle(.borderedProminent)
             .font(.title2)
             .tint(.orange)
+            
+            Button("Great!") {
+                message = "Great!"
+            }
+            .buttonStyle(.borderedProminent)
+            .font(.title2)
+            .tint(.orange)
+            
+            }
         }
         .padding()
         
